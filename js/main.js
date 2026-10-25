@@ -267,22 +267,6 @@
   }
 
   /* ------------------------------------------------------------------
-     Role accordions — one open role per company
-     ------------------------------------------------------------------ */
-  document.querySelectorAll('.career-roles').forEach((group) => {
-    const roles = Array.from(group.querySelectorAll('details.role'));
-
-    roles.forEach((role) => {
-      role.addEventListener('toggle', () => {
-        if (!role.open) return;
-        roles.forEach((otherRole) => {
-          if (otherRole !== role) otherRole.open = false;
-        });
-      });
-    });
-  });
-
-  /* ------------------------------------------------------------------
      Footer year
      ------------------------------------------------------------------ */
   const year = document.querySelector('[data-year]');
