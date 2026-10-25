@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William Miguel Bernal — SharePoint &amp; Microsoft 365 Specialist</title>
+  <meta name="description" content="Portfolio of William Miguel Bernal — a SharePoint and Microsoft 365 specialist building secure, scalable digital workplaces with SPFx, Power Platform and .NET.">
+  <meta name="author" content="William Miguel Bernal">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="William Miguel Bernal — SharePoint &amp; Microsoft 365 Specialist">
+  <meta property="og:description" content="15+ years turning complex enterprise work into secure, scalable digital experiences.">
+  <meta name="theme-color" content="#0a0c08" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f3f0e7" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (() => {
+      const root = document.documentElement;
+      root.classList.add('js');
+      try {
+        const saved = localStorage.getItem('wmb-theme');
+        if (saved === 'light' || saved === 'dark') root.dataset.theme = saved;
+      } catch (error) { /* Theme persistence is optional. */ }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="svg-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M5 21h14"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.3 15.7A8.5 8.5 0 0 1 8.3 3.7a8.5 8.5 0 1 0 12 12Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-7l0-7Z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.2 5.8L8 16l2.2-5.8L16 8Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M6.5 8.5V19M6.5 5v.01M10.5 19v-5.8a3.7 3.7 0 0 1 7.4 0V19M10.5 9.2V19"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10Z"/></symbol>
+  </svg>
+
+  <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
+
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="William Miguel Bernal — back to top">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </span>
+        <span class="brand-copy">
+          <strong>William Bernal</strong>
+          <span>SharePoint &amp; M365</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#work">Focus</a>
+        <a href="#experience">Experience</a>
+        <a href="#credentials">Credentials</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+
+        <div class="nav-meta" aria-label="Contact details">
+          <span><span class="status-dot"></span>Open to remote work</span>
+          <a href="mailto:wmbernal@outlook.com">wmbernal@outlook.com</a>
+          <span>São Paulo, BR</span>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+          <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+        </button>
+        <a class="button button--small header-cta" href="#contact">
+          Let's talk
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+        </a>
+        <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-glow" data-hero-glow></div>
+        <span class="hero-watermark">WMB</span>
+      </div>
+
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow">
+            <span class="status"><span class="status-dot"></span>Open to remote</span>
+            <span class="eyebrow-rule" aria-hidden="true"></span>
+            <span>São Paulo, Brazil</span>
+          </p>
+
+          <h1 class="hero-title" id="hero-title">
+            <span>William</span>
+            <span>Miguel</span>
+            <span class="hero-title-accent">Bernal</span>
+          </h1>
+
+          <p class="hero-role">SharePoint &amp; Microsoft 365 Specialist</p>
+          <p class="hero-lede">I design and build secure, scalable digital workplaces — connecting SharePoint, SPFx, Power Platform and .NET so complex work feels simple.</p>
+
+          <div class="hero-actions">
+            <a class="button" href="#work">
+              Explore my work
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+            <a class="button button--ghost" href="assets/william-bernal-cv.pdf" download>
+              Download CV
+              <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>
+            </a>
+          </div>
+
+          <dl class="hero-facts">
+            <div>
+              <dt>Based in</dt>
+              <dd>São Paulo, BR</dd>
+            </div>
+            <div>
+              <dt>Working</dt>
+              <dd>Remote-first</dd>
+            </div>
+            <div>
+              <dt>Experience</dt>
+              <dd>15+ years</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-rings" aria-hidden="true"></div>
+
+          <div class="availability-pill">
+            <span class="status-dot"></span>
+            Available for remote work
+          </div>
+
+          <div class="id-card" aria-hidden="true">
+            <div class="id-card-top">
+              <span>WMB / Profile</span>
+              <span class="micro-chip">M365</span>
+            </div>
+
+            <div class="id-card-main">
+              <div class="id-monogram">WB<span>.</span></div>
+              <p class="id-discipline">SharePoint<br>&amp; Microsoft 365</p>
+              <p class="id-name">William Miguel Bernal</p>
+            </div>
+
+            <div class="id-card-data">
+              <div><span>Base</span><strong>São Paulo, BR</strong></div>
+              <div><span>Mode</span><strong>Remote-first</strong></div>
+              <div><span>Since</span><strong>2011</strong></div>
+              <div><span>Status</span><strong class="status"><span class="status-dot"></span>Available</strong></div>
+            </div>
+
+            <div class="id-card-bottom">
+              <div class="barcode"></div>
+              <span>SPFx · POWER · .NET</span>
+            </div>
+          </div>
+
+          <div class="years-stamp" aria-hidden="true">
+            <strong>15+</strong>
+            <span>years<br>in tech</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll to explore</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-set">
+          <span>SharePoint Online</span><i>✦</i>
+          <span>SPFx Development</span><i>✦</i>
+          <span>Power Platform</span><i>✦</i>
+          <span>Microsoft 365</span><i>✦</i>
+          <span>.NET / C#</span><i>✦</i>
+          <span>Microsoft Entra ID</span><i>✦</i>
+          <span>PowerShell Automation</span><i>✦</i>
+          <span>Digital Workplace</span><i>✦</i>
+        </div>
+        <div class="ticker-set">
+          <span>SharePoint Online</span><i>✦</i>
+          <span>SPFx Development</span><i>✦</i>
+          <span>Power Platform</span><i>✦</i>
+          <span>Microsoft 365</span><i>✦</i>
+          <span>.NET / C#</span><i>✦</i>
+          <span>Microsoft Entra ID</span><i>✦</i>
+          <span>PowerShell Automation</span><i>✦</i>
+          <span>Digital Workplace</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">01 / About</span>
+          <h2 class="section-title" id="about-title">Work should feel <em>lighter.</em></h2>
+          <p class="section-kicker">The short version: I make enterprise technology more useful, more secure, and less exhausting.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="about-lead">I've spent 15+ years inside the Microsoft ecosystem, helping organizations turn scattered tools and manual processes into systems people can actually use.</p>
+            <p>My work sits where development, automation and governance meet: designing SharePoint and Microsoft 365 solutions, building SPFx experiences, automating workflows with Power Platform, and modernizing legacy .NET applications. I care about the unglamorous details — clean architecture, secure defaults, clear documentation, and adoption that lasts.</p>
+
+            <ol class="principles">
+              <li>
+                <span>01</span>
+                <div>
+                  <h3>Clarity over complexity</h3>
+                  <p>Simplify the problem before adding technology.</p>
+                </div>
+              </li>
+              <li>
+                <span>02</span>
+                <div>
+                  <h3>Secure by default</h3>
+                  <p>Governance and maintainability are part of the design.</p>
+                </div>
+              </li>
+              <li>
+                <span>03</span>
+                <div>
+                  <h3>Adoption is the finish line</h3>
+                  <p>A solution only works when people use it.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <aside class="about-side reveal" aria-label="Profile at a glance">
+            <div class="currently-card">
+              <p class="mini-label"><span class="status-dot"></span>Currently</p>
+              <p>.NET, SharePoint &amp; Power Platform Consultant at <strong>Deloitte</strong>.</p>
+              <a class="text-link" href="#experience">
+                See the full timeline
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+              </a>
+            </div>
+
+            <dl class="quick-facts">
+              <div>
+                <dt>Experience</dt>
+                <dd>15+ <span>years</span></dd>
+              </div>
+              <div>
+                <dt>Certifications</dt>
+                <dd>5 <span>credentials</span></dd>
+              </div>
+              <div>
+                <dt>Languages</dt>
+                <dd>PT / EN <span>Portuguese &amp; English</span></dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>M365 <span>ecosystem</span></dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section expertise" id="expertise" aria-labelledby="expertise-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">02 / Expertise</span>
+          <h2 class="section-title" id="expertise-title">A full-stack <em>Microsoft</em> toolkit.</h2>
+          <p class="section-kicker">From the portal, to the process, to the code behind it.</p>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card expertise-card--m365 reveal">
+            <div class="card-top">
+              <span class="card-number">01</span>
+              <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-grid"></use></svg></span>
+            </div>
+            <h3>Microsoft 365<br>&amp; SharePoint</h3>
+            <p>Collaboration platforms that hold up at enterprise scale — from information architecture and governance to custom experiences.</p>
+            <ul class="tag-list">
+              <li>SharePoint Online</li>
+              <li>SharePoint Server</li>
+              <li>SPFx</li>
+              <li>SPFx Extensions</li>
+              <li>M365 governance</li>
+              <li>Modern Workplace</li>
+            </ul>
+            <div class="stack-visual" aria-hidden="true">
+              <div><span>SharePoint</span><i style="--fill: 94%"></i></div>
+              <div><span>SPFx</span><i style="--fill: 86%"></i></div>
+              <div><span>Governance</span><i style="--fill: 90%"></i></div>
+            </div>
+          </article>
+
+          <article class="expertise-card expertise-card--power reveal">
+            <div class="card-top">
+              <span class="card-number">02</span>
+              <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-bolt"></use></svg></span>
+            </div>
+            <h3>Power Platform</h3>
+            <p>Automation with guardrails — not a shadow-IT sprawl. I build processes that are faster, visible and easier to own.</p>
+            <ul class="tag-list">
+              <li>Power Apps</li>
+              <li>Power Automate</li>
+              <li>Power BI</li>
+              <li>Dataverse</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card expertise-card--engineering reveal">
+            <div class="card-top">
+              <span class="card-number">03</span>
+              <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span>
+            </div>
+            <h3>Engineering</h3>
+            <p>Back-end logic, front-end craft and the automation glue in between. Maintainable code that fits the platform.</p>
+            <ul class="tag-list">
+              <li>C# / .NET</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>PowerShell</li>
+              <li>HTML / CSS</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card expertise-card--architecture reveal">
+            <div class="card-top">
+              <span class="card-number">04</span>
+              <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-compass"></use></svg></span>
+            </div>
+            <div class="architecture-copy">
+              <h3>Architecture &amp; delivery</h3>
+              <p>I connect the business problem to the technical decision — and stay close enough to make sure it ships.</p>
+            </div>
+            <div class="architecture-steps" aria-label="Delivery approach">
+              <div><span>01</span><strong>Discover</strong><small>Requirements &amp; process mapping</small></div>
+              <div><span>02</span><strong>Architect</strong><small>Secure, scalable solution design</small></div>
+              <div><span>03</span><strong>Deliver</strong><small>Build, migrate, document, adopt</small></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">03 / Focus</span>
+          <h2 class="section-title" id="work-title">Problems I like <em>to solve.</em></h2>
+          <p class="section-kicker">Representative work shaped by 15 years of enterprise delivery — not a list of buzzwords.</p>
+        </div>
+
+        <div class="impact-list">
+          <article class="impact reveal">
+            <span class="impact-number">01</span>
+            <div class="impact-copy">
+              <h3>Modernize <em>without the chaos</em></h3>
+              <p>Legacy .NET and SharePoint environments are rarely just technology problems. I help teams retire what no longer serves them, migrate what matters, and keep the business running while it happens.</p>
+            </div>
+            <div class="impact-side">
+              <ul class="impact-tags">
+                <li>Legacy modernization</li>
+                <li>Migration</li>
+                <li>Decommissioning</li>
+              </ul>
+              <span class="impact-mark" aria-hidden="true"><svg class="icon"><use href="#i-spark"></use></svg></span>
+            </div>
+          </article>
+
+          <article class="impact reveal">
+            <span class="impact-number">02</span>
+            <div class="impact-copy">
+              <h3>Build collaboration <em>that sticks</em></h3>
+              <p>From document dumps to purposeful digital workplaces: SharePoint and SPFx experiences shaped around how people actually work, with governance that doesn't get in the way.</p>
+            </div>
+            <div class="impact-side">
+              <ul class="impact-tags">
+                <li>SharePoint Online</li>
+                <li>SPFx</li>
+                <li>Digital workplace</li>
+              </ul>
+              <span class="impact-mark" aria-hidden="true"><svg class="icon"><use href="#i-spark"></use></svg></span>
+            </div>
+          </article>
+
+          <article class="impact reveal">
+            <span class="impact-number">03</span>
+            <div class="impact-copy">
+              <h3>Automate <em>the repetitive</em></h3>
+              <p>Power Apps, Power Automate and Dataverse solutions that remove manual steps, improve visibility, and give teams more time for the work that matters.</p>
+            </div>
+            <div class="impact-side">
+              <ul class="impact-tags">
+                <li>Power Platform</li>
+                <li>Workflow automation</li>
+                <li>Dataverse</li>
+              </ul>
+              <span class="impact-mark" aria-hidden="true"><svg class="icon"><use href="#i-spark"></use></svg></span>
+            </div>
+          </article>
+
+          <article class="impact reveal">
+            <span class="impact-number">04</span>
+            <div class="impact-copy">
+              <h3>Lead delivery <em>end to end</em></h3>
+              <p>Requirements, architecture, stakeholders and multidisciplinary teams — aligned from the first workshop through production and adoption.</p>
+            </div>
+            <div class="impact-side">
+              <ul class="impact-tags">
+                <li>Solution architecture</li>
+                <li>Service delivery</li>
+                <li>Team leadership</li>
+              </ul>
+              <span class="impact-mark" aria-hidden="true"><svg class="icon"><use href="#i-spark"></use></svg></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="experience-layout">
+          <div class="experience-intro reveal">
+            <span class="section-index">04 / Experience</span>
+            <h2 class="section-title" id="experience-title">A career built on <em>shipping.</em></h2>
+            <p>From SharePoint developer to consultant and service leader — always close to the work, the people using it, and the outcome.</p>
+            <a class="text-link" href="assets/william-bernal-cv.pdf" download>
+              Download the full CV
+              <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>
+            </a>
+            <dl class="experience-facts">
+              <div><dt>Since</dt><dd>2011</dd></div>
+              <div><dt>Companies</dt><dd>04</dd></div>
+              <div><dt>Current</dt><dd>Deloitte</dd></div>
+            </dl>
+          </div>
+
+          <div class="career">
+            <div class="career-group reveal">
+              <div class="career-company">
+                <h3>Deloitte</h3>
+                <span>2020 — Present</span>
+              </div>
+              <div class="career-roles">
+                <details class="role" open>
+                  <summary>
+                    <span class="role-period">2024 — Present</span>
+                    <span class="role-heading">
+                      <strong>.NET, SharePoint &amp; Power Platform Consultant</strong>
+                      <span>2 yrs 6 mos · Remote</span>
+                    </span>
+                    <span class="role-toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span>
+                  </summary>
+                  <div class="role-body">
+                    <p>Consulting across legacy modernization, collaboration and process automation for enterprise clients.</p>
+                    <ul class="role-points">
+                      <li>Modernize and decommission legacy .NET applications without disrupting business operations.</li>
+                      <li>Design SharePoint solutions for collaboration, document management and process efficiency.</li>
+                      <li>Build Power Apps, Power Automate, Dataverse and SPFx (JavaScript / TypeScript) solutions.</li>
+                      <li>Translate stakeholder requirements into secure, scalable and maintainable systems.</li>
+                    </ul>
+                    <ul class="role-tags"><li>SharePoint</li><li>Power Platform</li><li>.NET</li><li>SPFx</li></ul>
+                  </div>
+                </details>
+
+                <details class="role">
+                  <summary>
+                    <span class="role-period">2023 — 2024</span>
+                    <span class="role-heading">
+                      <strong>Tech Manager — AMS &amp; IMS</strong>
+                      <span>1 yr 6 mos</span>
+                    </span>
+                    <span class="role-toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span>
+                  </summary>
+                  <div class="role-body">
+                    <p>Led multidisciplinary infrastructure and application teams across global service operations.</p>
+                    <ul class="role-points">
+                      <li>Owned service delivery, KPIs and continuous improvement across global environments.</li>
+                      <li>Drove workforce planning, team development and operating model design.</li>
+                      <li>Partnered with customers to expand scope and develop new service offerings.</li>
+                    </ul>
+                    <ul class="role-tags"><li>Service delivery</li><li>Leadership</li><li>Global operations</li></ul>
+                  </div>
+                </details>
+
+                <details class="role">
+                  <summary>
+                    <span class="role-period">2021 — 2023</span>
+                    <span class="role-heading">
+                      <strong>Technical Team Leader</strong>
+                      <span>1 yr 10 mos · Remote</span>
+                    </span>
+                    <span class="role-toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span>
+                  </summary>
+                  <div class="role-body">
+                    <p>Led technical delivery teams across SharePoint and Microsoft 365 initiatives.</p>
+                    <ul class="role-points">
+                      <li>Coordinated technical execution, planning and quality across delivery work.</li>
+                      <li>Supported stakeholder communication and day-to-day team leadership.</li>
+                    </ul>
+                    <ul class="role-tags"><li>Team leadership</li><li>SharePoint</li><li>Microsoft 365</li></ul>
+                  </div>
+                </details>
+
+                <details class="role">
+                  <summary>
+                    <span class="role-period">2020 — 2021</span>
+                    <span class="role-heading">
+                      <strong>SharePoint Consultant</strong>
+                      <span>7 mos · São Paulo</span>
+                    </span>
+                    <span class="role-toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span>
+                  </summary>
+                  <div class="role-body">
+                    <p>Platform modernization, content migration and legacy system decommissioning.</p>
+                    <ul class="role-points">
+                      <li>Created technical documentation and governance frameworks.</li>
+                      <li>Managed migrations and continuous improvement projects.</li>
+                      <li>Established quality standards and operational processes.</li>
+                    </ul>
+                    <ul class="role-tags"><li>SharePoint</li><li>Migration</li><li>Governance</li></ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <div class="career-group reveal">
+              <div class="career-company">
+                <h3>W M Bernal</h3>
+                <span>Independent · 2017 — Present</span>
+              </div>
+              <div class="career-roles">
+                <details class="role">
+                  <summary>
+                    <span class="role-period">2017 — Present</span>
+                    <span class="role-heading">
+                      <strong>SharePoint Specialist — Ultra Group &amp; ExtraFarma</strong>
+                      <span>9 yrs 2 mos · São Paulo</span>
+                    </span>
+                    <span class="role-toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span>
+                  </summary>
+                  <div class="role-body">
+                    <p>Independent consultant and developer delivering SharePoint projects end to end.</p>
+                    <ul class="role-points">
+                      <li>Lead projects from requirements and solution architecture through development and delivery.</li>
+                      <li>Build C#/.NET back ends and responsive front ends with Bootstrap, JavaScript, jQuery and CSS.</li>
+                      <li>Facilitate requirements elicitation, solution modeling and delivery prioritization.</li>
+                      <li>Ensure quality, performance and adoption across delivered solutions.</li>
+                    </ul>
+                    <ul class="role-tags"><li>SharePoint</li><li>C# / .NET</li><li>JavaScript</li><li>Architecture</li></ul>
+                  </div>
+                </details>
+
+                <details class="role">
+                  <summary>
+                    <span class="role-period">2020</span>
+                    <span class="role-heading">
+                      <strong>Specialist Consultant — SharePoint / Office 365 / Power Platform</strong>
+                      <span>6 mos · São Paulo</span>
+                    </span>
+                    <span class="role-toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span>
+                  </summary>
+                  <div class="role-body">
+                    <p>Digital transformation and process automation consulting for collaboration and productivity.</p>
+                    <ul class="role-points">
+                      <li>Mapped and optimized business processes.</li>
+                      <li>Designed SharePoint Online collaboration and Power Automate workflows.</li>
+                      <li>Delivered training and technical documentation.</li>
+                    </ul>
+                    <ul class="role-tags"><li>Power Automate</li><li>SharePoint Online</li><li>Process design</li></ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <div class="career-group reveal">
+              <div class="career-company">
+                <h3>Banco Votorantim</h3>
+                <span>2015 — 2017</span>
+              </div>
+              <div class="career-roles">
+                <details class="role">
+                  <summary>
+                    <span class="role-period">2015 — 2017</span>
+                    <span class="role-heading">
+                      <strong>SharePoint Consultant</strong>
+                      <span>1 yr 8 mos · São Paulo</span>
+                    </span>
+                    <span class="role-toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span>
+                  </summary>
+                  <div class="role-body">
+                    <p>Consulting across collaboration, productivity and digital transformation projects.</p>
+                    <ul class="role-points">
+                      <li>Supported scope definition, requirements gathering and solution architecture.</li>
+                      <li>Validated deliverables, supported deployments and trained business users.</li>
+                      <li>Planned environment migrations and automated operational processes.</li>
+                    </ul>
+                    <ul class="role-tags"><li>SharePoint</li><li>Requirements</li><li>Migration</li></ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <div class="career-group reveal">
+              <div class="career-company">
+                <h3>Discover Technology</h3>
+                <span>2011 — 2015</span>
+              </div>
+              <div class="career-roles">
+                <details class="role">
+                  <summary>
+                    <span class="role-period">2011 — 2015</span>
+                    <span class="role-heading">
+                      <strong>SharePoint Developer Analyst</strong>
+                      <span>4 yrs · São Paulo</span>
+                    </span>
+                    <span class="role-toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"></use></svg></span>
+                  </summary>
+                  <div class="role-body">
+                    <p>Built and customized enterprise SharePoint solutions across 2007, 2010, 2013 and Online.</p>
+                    <ul class="role-points">
+                      <li>Planned, designed and implemented SharePoint solutions for business processes.</li>
+                      <li>Customized with Visual Studio, .NET and SharePoint Designer.</li>
+                      <li>Translated requirements into scalable solutions and technical documentation.</li>
+                    </ul>
+                    <ul class="role-tags"><li>SharePoint</li><li>.NET</li><li>Visual Studio</li><li>Solution design</li></ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section credentials" id="credentials" aria-labelledby="credentials-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">05 / Credentials</span>
+          <h2 class="section-title" id="credentials-title">Proof, not <em>promises.</em></h2>
+          <p class="section-kicker">Certifications, formal education, and the languages I work in.</p>
+        </div>
+
+        <div class="credentials-grid">
+          <div class="credentials-panel reveal">
+            <div class="panel-heading">
+              <span>Certifications &amp; learning</span>
+              <span>05</span>
+            </div>
+            <ul class="credential-list">
+              <li>
+                <span class="credential-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+                <div><h3>Microsoft Certified: Power Platform Fundamentals</h3><p>PL-100 · Microsoft</p></div>
+              </li>
+              <li>
+                <span class="credential-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+                <div><h3>Designing &amp; Developing Microsoft SharePoint 2010 Applications</h3><p>Microsoft certification</p></div>
+              </li>
+              <li>
+                <span class="credential-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+                <div><h3>Developing Microsoft SharePoint Server 2013 Core Solutions</h3><p>Microsoft certification</p></div>
+              </li>
+              <li>
+                <span class="credential-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+                <div><h3>Claude 101</h3><p>Certificate of completion · Anthropic</p></div>
+              </li>
+              <li>
+                <span class="credential-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+                <div><h3>AI Fluency: Framework &amp; Foundations</h3><p>Certificate of completion · Anthropic</p></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="credentials-side reveal">
+            <div class="education-panel">
+              <div class="panel-heading">
+                <span>Education</span>
+                <span>02</span>
+              </div>
+              <div class="education-item">
+                <span class="education-period">2020 — 2021</span>
+                <h3>MBA, IT Management</h3>
+                <p>FIAP</p>
+              </div>
+              <div class="education-item">
+                <span class="education-period">2008 — 2011</span>
+                <h3>Technology Degree, IT Management</h3>
+                <p>Faculdade de Tecnologia Zona Leste — FATEC ZL</p>
+              </div>
+            </div>
+
+            <div class="languages-panel">
+              <div class="panel-heading">
+                <span>Languages</span>
+                <span>02</span>
+              </div>
+              <div class="language-row">
+                <strong>Portuguese</strong>
+                <span>Native</span>
+              </div>
+              <div class="language-row">
+                <strong>English</strong>
+                <span>Native / Bilingual</span>
+              </div>
+            </div>
+
+            <div class="learning-note">
+              <svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg>
+              <p>Always learning — currently exploring AI-assisted development and practical automation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-top">
+            <span class="section-index">06 / Contact</span>
+            <span class="contact-status"><span class="status-dot"></span>Open to remote opportunities</span>
+          </div>
+
+          <div class="contact-main">
+            <h2 id="contact-title">Let's make work <em>work better.</em></h2>
+            <p>Have a SharePoint problem, an automation idea, or a team that needs a steady technical hand? I'd love to hear about it.</p>
+            <a class="contact-email" href="mailto:wmbernal@outlook.com">
+              wmbernal@outlook.com
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+          </div>
+
+          <div class="contact-grid">
+            <div>
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/thesharepointguy" target="_blank" rel="noopener noreferrer">in/thesharepointguy</a>
+            </div>
+            <div>
+              <span>Based in</span>
+              <p>São Paulo, Brazil · UTC−3</p>
+            </div>
+            <div>
+              <span>Local time</span>
+              <p data-local-time>--:--</p>
+            </div>
+            <button class="copy-button" type="button" data-copy-email>
+              Copy email
+              <svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg>
+            </button>
+          </div>
+
+          <span class="contact-watermark" aria-hidden="true">WB</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand" href="#top" aria-label="William Miguel Bernal — back to top">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span class="brand-copy">
+            <strong>William Bernal</strong>
+            <span>SharePoint &amp; M365</span>
+          </span>
+        </a>
+
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#experience">Experience</a>
+          <a href="assets/william-bernal-cv.pdf" download>Download CV</a>
+        </nav>
+
+        <a class="back-to-top" href="#top">
+          Back to top
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> William Miguel Bernal</span>
+        <span>São Paulo, Brazil · UTC−3</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>Email copied to clipboard</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
